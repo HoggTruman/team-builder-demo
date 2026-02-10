@@ -1,0 +1,225 @@
+id,identifier,effect
+1,master-ball,Catches a wild Pokémon every time.
+2,ultra-ball,Tries to catch a wild Pokémon.  Success rate is 2×.
+3,great-ball,Tries to catch a wild Pokémon.  Success rate is 1.5×.
+4,poke-ball,Tries to catch a wild Pokémon.
+5,safari-ball,Tries to catch a wild Pokémon in the Great Marsh or Safari Zone.  Success rate is 1.5×.
+6,net-ball,Tries to catch a wild Pokémon.  Success rate is 3× for water and bug Pokémon.
+7,dive-ball,"Tries to catch a wild Pokémon. Success rate is 3.5× when underwater, fishing, or surfing."
+8,nest-ball,"Tries to catch a wild Pokémon.  Success rate is 3.9× for level 1 Pokémon, and drops steadily to 1× at level 30."
+9,repeat-ball,Tries to catch a wild Pokémon.  Success rate is 3× for previously-caught Pokémon.
+10,timer-ball,"Tries to catch a wild Pokémon. Success rate increases by 0.1× (Gen V: 0.3×) every turn, to a max of 4×."
+11,luxury-ball,Tries to catch a wild Pokémon.  Caught Pokémon start with 200 happiness.
+12,premier-ball,Tries to catch a wild Pokémon.
+13,dusk-ball,Tries to catch a wild Pokémon.  Success rate is 3.5× at night and in caves.
+14,heal-ball,Tries to catch a wild Pokémon.  Caught Pokémon are immediately healed.
+15,quick-ball,"Tries to catch a wild Pokémon. Success rate is 4× (Gen V: 5×), but only on the first turn."
+16,cherish-ball,Tries to catch a wild Pokémon.
+17,potion,Restores 20 HP.
+18,antidote,Cures poison.
+19,burn-heal,Cures a burn.
+20,ice-heal,Cures freezing.
+21,awakening,Cures sleep.
+22,paralyze-heal,Cures paralysis.
+23,full-restore,Restores HP to full and cures any status ailment and confusion.
+24,max-potion,Restores HP to full.
+25,hyper-potion,Restores 200 HP.
+26,super-potion,Restores 50 HP.
+27,full-heal,Cures any status ailment and confusion.
+28,revive,Revives with half HP.
+29,max-revive,Revives with full HP.
+30,fresh-water,Restores 50 HP.
+31,soda-pop,Restores 60 HP.
+32,lemonade,Restores 80 HP.
+33,moomoo-milk,Restores 100 HP.
+34,energy-powder,"Restores 50 HP, but lowers happiness."
+35,energy-root,"Restores 200 HP, but lowers happiness."
+36,heal-powder,"Cures any status ailment, but lowers happiness."
+37,revival-herb,"Revives with full HP, but lowers happiness."
+38,ether,Restores 10 PP for one move.
+39,max-ether,Restores PP to full for one move.
+40,elixir,Restores 10 PP for each move.
+41,max-elixir,Restores PP to full for each move.
+42,lava-cookie,Cures any status ailment and confusion.
+43,berry-juice,Restores 20 HP.
+44,sacred-ash,Revives all fainted Pokémon with full HP.
+45,hp-up,Raises HP effort and happiness.
+46,protein,Raises Attack effort and happiness.
+47,iron,Raises Defense effort and happiness.
+48,carbos,Raises Speed effort and happiness.
+49,calcium,Raises Special Attack effort and happiness.
+50,rare-candy,Causes a level-up and raises happiness.
+51,pp-up,Raises a move's max PP by 20%.
+52,zinc,Raises Special Defense and happiness.
+53,pp-max,Raises a move's max PP by 60%.
+54,old-gateau,Cures any status ailment and confusion.
+55,guard-spec,Prevents stat changes in battle for five turns in battle.  Raises happiness.
+56,dire-hit,Increases the chance of a critical hit in battle.  Raises happiness.
+57,x-attack,Raises Attack by one stage in battle.  Raises happiness.
+58,x-defense,Raises Defense by one stage in battle.  Raises happiness.
+59,x-speed,Raises Speed by one stage in battle.  Raises happiness.
+60,x-accuracy,Raises accuracy by one stage in battle.  Raises happiness.
+61,x-sp-atk,Raises Special Attack by one stage in battle.  Raises happiness.
+62,x-sp-def,Raises Special Defense by one stage in battle.  Raises happiness.
+63,poke-doll,Ends a wild battle.
+64,fluffy-tail,Ends a wild battle.
+65,blue-flute,Cures sleep.
+66,yellow-flute,Cures confusion.
+67,red-flute,Cures attraction.
+68,black-flute,Halves the wild Pokémon encounter rate.
+69,white-flute,Doubles the wild Pokémon encounter rate.
+112,adamant-orb,Boosts the damage from Dialga's Dragon-type and Steel-type moves by 20%.
+113,lustrous-orb,Boosts the damage from Palkia's Dragon-type and Water-type moves by 20%.
+126,cheri-berry,Held: Consumed when paralyzed to cure paralysis.
+127,chesto-berry,Held: Consumed when asleep to cure sleep.
+128,pecha-berry,Held: Consumed when poisoned to cure poison.
+129,rawst-berry,Held: Consumed when burned to cure a burn.
+130,aspear-berry,Held: Consumed when frozen to cure frozen.
+131,leppa-berry,Held: Consumed when a move runs out of PP to restore its PP by 10.
+132,oran-berry,Held: Consumed at 1/2 max HP to recover 10 HP.
+133,persim-berry,Held: Consumed when confused to cure confusion.
+134,lum-berry,Held: Consumed to cure any status condition or confusion.
+135,sitrus-berry,Held: Consumed at 1/2 max HP to recover 1/4 max HP.
+136,figy-berry,Held: Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pokémon that dislike spicy flavor.
+137,wiki-berry,Held: Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pokémon that dislike dry flavor.
+138,mago-berry,Held: Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pokémon that dislike sweet flavor.
+139,aguav-berry,Held: Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pokémon that dislike bitter flavor.
+140,iapapa-berry,Held: Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pokémon that dislike sour flavor.
+161,occa-berry,Held: Consumed when struck by a super-effective Fire-type attack to halve the damage.
+162,passho-berry,Held: Consumed when struck by a super-effective Water-type attack to halve the damage.
+163,wacan-berry,Held: Consumed when struck by a super-effective Electric-type attack to halve the damage.
+164,rindo-berry,Held: Consumed when struck by a super-effective Grass-type attack to halve the damage.
+165,yache-berry,Held: Consumed when struck by a super-effective Ice-type attack to halve the damage.
+166,chople-berry,Held: Consumed when struck by a super-effective Fighting-type attack to halve the damage.
+167,kebia-berry,Held: Consumed when struck by a super-effective Poison-type attack to halve the damage.
+168,shuca-berry,Held: Consumed when struck by a super-effective Ground-type attack to halve the damage.
+169,coba-berry,Held: Consumed when struck by a super-effective Flying-type attack to halve the damage.
+170,payapa-berry,Held: Consumed when struck by a super-effective Psychic-type attack to halve the damage.
+171,tanga-berry,Held: Consumed when struck by a super-effective Bug-type attack to halve the damage.
+172,charti-berry,Held: Consumed when struck by a super-effective Rock-type attack to halve the damage.
+173,kasib-berry,Held: Consumed when struck by a super-effective Ghost-type attack to halve the damage.
+174,haban-berry,Held: Consumed when struck by a super-effective Dragon-type attack to halve the damage.
+175,colbur-berry,Held: Consumed when struck by a super-effective Dark-type attack to halve the damage.
+176,babiri-berry,Held: Consumed when struck by a super-effective Steel-type attack to halve the damage.
+177,chilan-berry,Held: Consumed when struck by a Normal-type attack to halve the damage.
+178,liechi-berry,Held: Consumed at 1/4 max HP to boost Attack.
+179,ganlon-berry,Held: Consumed at 1/4 max HP to boost Defense.
+180,salac-berry,Held: Consumed at 1/4 max HP to boost Speed.
+181,petaya-berry,Held: Consumed at 1/4 max HP to boost Special Attack.
+182,apicot-berry,Held: Consumed at 1/4 max HP to boost Special Defense.
+183,lansat-berry,Held: Consumed at 1/4 max HP to boost critical hit ratio by two stages.
+184,starf-berry,Held: Consumed at 1/4 max HP to boost a random stat by two stages.
+185,enigma-berry,Held: Consumed when struck by a super-effective attack to restore 1/4 max HP.
+186,micle-berry,Held: Consumed at 1/4 max HP to boost accuracy of next move by 20%. (Gen IV: Perfect accuracy)
+187,custap-berry,Held: Consumed at 1/4 max HP when using a move to go first.
+188,jaboca-berry,Held: Consumed to deal 1/8 attacker's max HP when holder is struck by a physical attack.
+189,rowap-berry,Held: Consumed to deal 1/8 attacker's max HP when holder is struck by a special attack.
+190,bright-powder,Held: Increases the holder's evasion by 1/9 (11 1/9%).
+191,white-herb,Held: Resets all lowered stats to normal at end of turn. Consumed after use.
+192,macho-brace,"Held: Holder gains double effort values from battles, but has halved Speed in battle."
+193,exp-share,Held: Half the experience from a battle is split between Pokémon holding this item.
+194,quick-claw,Held: Holder has a 3/16 (18.75%) chance to move first.
+195,soothe-bell,Held: Doubles the happiness earned by the holder.
+196,mental-herb,"Held: Consumed to cure infatuation. Gen V: Also removes Taunt, Encore, Torment, Disable, and Cursed Body."
+197,choice-band,"Held: Increases Attack by 50%, but restricts the holder to only one move."
+198,kings-rock,Held: Damaging moves gain a 10% chance to make their target flinch. Traded on a Poliwhirl: Holder evolves into Politoed. Traded on a Slowpoke: Holder evolves into Slowking.
+199,silver-powder,Held: Bug-Type moves from holder do 20% more damage.
+200,amulet-coin,Held: Doubles the money earned from a battle. Does not stack with Luck Incense.
+201,cleanse-tag,Prevents wild encounters of level lower than your party's lead Pokémon.
+202,soul-dew,Raises Latias and Latios's Special Attack and Special Defense by 50%.
+203,deep-sea-tooth,Doubles Clamperl's Special Attack. Traded on a Clamperl: Holder evolves into Huntail.
+204,deep-sea-scale,Doubles Clamperl's Special Defense. Traded on a Clamperl: Holder evolves into Gorebyss.
+205,smoke-ball,Held: Allows the Holder to escape from any wild battle.
+206,everstone,Held: Prevents level-based evolution from occuring.
+207,focus-band,Held: Holder has 10% chance to survive attacks or self-inflicted damage at 1 HP.
+208,lucky-egg,Held: Increases EXP earned in battle by 50%.
+209,scope-lens,Held: Raises the holder's critical hit ratio by one stage.
+210,metal-coat,Held: Steel-Type moves from holder do 20% more damage.
+211,leftovers,Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn.
+213,light-ball,Doubles Pikachu's Attack and Special Attack. Breed on Pikachu or Raichu: Pichu Egg will have Volt Tackle.
+214,soft-sand,Held: Ground-Type moves from holder do 20% more damage.
+215,hard-stone,Held: Rock-Type moves from holder do 20% more damage.
+216,miracle-seed,Held: Grass-Type moves from holder do 20% more damage.
+217,black-glasses,Held: Dark-Type moves from holder do 20% more damage.
+218,black-belt,Held: Fighting-Type moves from holder do 20% more damage.
+219,magnet,Held: Electric-Type moves from holder do 20% more damage.
+220,mystic-water,Held: Water-Type moves from holder do 20% more damage.
+221,sharp-beak,Held: Flying-Type moves from holder do 20% more damage.
+222,poison-barb,Held: Poison-Type moves from holder do 20% more damage.
+223,never-melt-ice,Held: Ice-Type moves from holder do 20% more damage.
+224,spell-tag,Held: Ghost-Type moves from holder do 20% more damage.
+225,twisted-spoon,Held: Psychic-Type moves from holder do 20% more damage.
+226,charcoal,Held: Fire-Type moves from holder do 20% more damage.
+227,dragon-fang,Held: Dragon-Type moves from holder do 20% more damage.
+228,silk-scarf,Held: Normal-Type moves from holder do 20% more damage.
+230,shell-bell,Held: Holder receives 1/8 of the damage it deals when attacking.
+231,sea-incense,Held: Water-Type moves from holder do 20% more damage. Breeding: Marill or Azumarill beget an Azurill Egg.
+232,lax-incense,Held: Holder's evasion is increased by 5%. Breeding: Wobbuffet begets a Wynaut Egg.
+233,lucky-punch,Raises Chansey's critical hit ratio by two stages.
+234,metal-powder,Raises Ditto's Defense and Special Defense by 50%. The boost is lost after transforming.
+235,thick-club,Doubles Cubone or Marowak's Attack.
+236,stick,Raises Farfetch'd's critical hit ratio by two stages.
+237,red-scarf,Raises the holder's Coolness while in a contest.
+238,blue-scarf,Raises the holder's Beauty while in a contest.
+239,pink-scarf,Raises the holder's Cuteness while in a contest.
+240,green-scarf,Raises the holder's Smartness while in a contest.
+241,yellow-scarf,Raises the holder's Toughness while in a contest.
+242,wide-lens,Held: Provides a 1/10 (10%) boost in accuracy to the holder.
+243,muscle-band,Held: Boosts the damage of physical moves used by the holder by 10%.
+244,wise-glasses,Held: Boosts the damage of special moves used by the holder by 1/10 (10%).
+245,expert-belt,Held: Holder's Super Effective moves do 20% extra damage.
+246,light-clay,Held: Light Screen and Reflect used by the holder last 8 rounds instead of 5.
+247,life-orb,"Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+248,power-herb,Held: Both turns of a two-turn charge move happen at once. Consumed upon use.
+249,toxic-orb,Held: Inflicts Toxic on the holder at the end of the turn. Activates after Poison damage would occur.
+250,flame-orb,Held: Inflicts Burn on the holder at the end of the turn. Activates after Burn damage would occur.
+251,quick-powder,Doubles Ditto's Speed when held. The boost is lost after transforming.
+252,focus-sash,"Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+253,zoom-lens,Held: Provides a 1/5 (20%) boost in accuracy if the holder moves after the target.
+254,metronome,Held: Consectutive uses of the same attack have a cumulative damage boost of 10%. Maximum 100% boost.
+255,iron-ball,"Held: Holder's Speed is halved. Negates all Ground-type immunities, and makes Flying-types take neutral damage from Ground-type moves. Arena Trap. Spikes, and Toxic Spikes affect the holder."
+256,lagging-tail,Held: Holder moves last in its priority bracket.
+257,destiny-knot,Held: Infatuates opposing Pokémon when holder is inflicted with infatuation.
+258,black-sludge,Held: Poison-type holder recovers 1/16 (6.25%) max HP each turn. Non-Poison-Types take 1/8 (12.5%) max HP damage.
+259,icy-rock,Held: Hail by the holder lasts 8 rounds instead of 5.
+260,smooth-rock,Held: Sandstorm by the holder lasts 8 rounds instead of 5.
+261,heat-rock,Held: Sunny Day by the holder lasts 8 rounds instead of 5.
+262,damp-rock,Held: Rain Dance by the holder lasts 8 rounds instead of 5.
+263,grip-claw,Held: Holder's multi-turn trapping moves last 5 turns.
+264,choice-scarf,"Held: Increases Speed by 50%, but restricts the holder to only one move."
+265,sticky-barb,"Held: Holder takes 1/8 (12.5%) its max HP at the end of each turn. When the holder is hit by a contact move, the attacking Pokémon takes 1/8 its max HP in damage and receive the item if not holding one."
+266,power-bracer,"Held: Holder gains 4 Attack effort values, but has halved Speed in battle."
+267,power-belt,"Held: Holder gains 4 Defense effort values, but has halved Speed in battle."
+268,power-lens,"Held: Holder gains 4 Special Attack effort values, but has halved Speed in battle."
+269,power-band,"Held: Holder gains 4 Special Defense effort values, but has halved Speed in battle."
+270,power-anklet,"Held: Holder gains 4 Speed effort values, but has halved Speed in battle."
+271,power-weight,"Held: Holder gains 4 HP effort values, but has halved Speed in battle."
+272,shed-shell,Held: Holder can bypass all trapping effects and switch out. Multi-turn moves still cannot be switched out of.
+273,big-root,"Held: Increases HP recovered from draining moves, Ingrain, and Aqua Ring by 3/10 (30%)."
+274,choice-specs,"Held: Increases Special Attack by 50%, but restricts the holder to only one move."
+275,flame-plate,Held: Fire-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Fire.
+276,splash-plate,Held: Water-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Water.
+277,zap-plate,Held: Electric-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Electric.
+278,meadow-plate,Held: Grass-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Grass.
+279,icicle-plate,Held: Ice-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Ice.
+280,fist-plate,Held: Fighting-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Fighting.
+281,toxic-plate,Held: Posion-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Posion.
+282,earth-plate,Held: Ground-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Ground.
+283,sky-plate,Held: Flying-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Flying.
+284,mind-plate,Held: Psychic-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Psychic.
+285,insect-plate,Held: Bug-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Bug.
+286,stone-plate,Held: Rock-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Rock.
+287,spooky-plate,Held: Ghost-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Ghost.
+288,draco-plate,Held: Dragon-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Dragon.
+289,dread-plate,Held: Dark-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Dark.
+290,iron-plate,Held: Steel-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Steel.
+291,odd-incense,Held: Psychic-Type moves from holder do 20% more damage. Breeding: Mr. Mime begets a Mime Jr. Egg.
+292,rock-incense,Held: Rock-Type moves from holder do 20% more damage. Breeding: Sudowoodo begets a Bonsly Egg.
+293,full-incense,Held: Holder moves last in its priority bracket. Breeding: Snorlax begets a Munchlax Egg.
+294,wave-incense,Held: Water-Type moves from holder do 20% more damage. Breeding: Mantine begets a Mantyke Egg.
+295,rose-incense,Held: Grass-Type moves from holder do 20% more damage. Breeding: Roselia or Roserade beget a Budew Egg.
+296,luck-incense,Held: Doubles the money earned from a battle. Does not stack with Amulet Coin. Breeding: Chansey and Blissey beget a Happiny Egg.
+297,pure-incense,Prevents wild encounters of level lower than your party's lead Pokémon. Breeding: Chimecho begets a Chingling Egg.
+303,razor-claw,Held: Raises the holder's critical hit ratio by one stage. Held by a Sneasel while levelling up at night: Holder evolves into Weavile.
+304,razor-fang,Held: Damaging moves gain a 10% chance to make their target flinch. Held by a Gligar while levelling up: Holder evolves into Gliscor.
+2160,linking-cord,Allows a Pokemon whose evolution is usually triggered by trading to evolve

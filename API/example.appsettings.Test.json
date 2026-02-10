@@ -1,0 +1,5 @@
+{
+    "ConnectionStrings": {
+        "DB_CONNECTION_STRING": "your test db connection string here"
+    }
+}
