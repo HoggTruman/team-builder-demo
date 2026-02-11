@@ -10,9 +10,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text.Json.Serialization;
+using dotenv.net;
 
 
-
+DotEnv.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,16 +23,12 @@ if (args.Length == 2 && args[0] == "seed" && args[1] == "test")
     Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Test");
 }
 
-var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? builder.Environment.EnvironmentName;
+// var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? builder.Environment.EnvironmentName;
 
 builder.Configuration
-       .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-       .AddJsonFile($"appsettings.{environmentName}.json", optional: true, reloadOnChange: true);
+       .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+    //    .AddJsonFile($"appsettings.{environmentName}.json", optional: true, reloadOnChange: true);
 
-
-
-
-#region Add services to the container.
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers()
@@ -39,8 +36,7 @@ builder.Services.AddControllers()
 
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(option =>
-{
+builder.Services.AddSwaggerGen(option => {
     option.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
@@ -62,7 +58,7 @@ builder.Services.AddSwaggerGen(option =>
                     Id="Bearer"
                 }
             },
-            new string[]{}
+            Array.Empty<string>()
         }
     });
 });
@@ -71,8 +67,14 @@ builder.Services.AddSwaggerGen(option =>
 
 // Add DBContext
 builder.Services.AddDbContext<ApplicationDbContext>(options => {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DB_CONNECTION_STRING"));
-    options.EnableSensitiveDataLogging();
+    string? host = Environment.GetEnvironmentVariable("PGHOST");
+    string? port = Environment.GetEnvironmentVariable("POSTGRES_PORT");
+    string? password = Environment.GetEnvironmentVariable("POSTGRES_PASSWORD");
+    string? db = Environment.GetEnvironmentVariable("POSTGRES_DATABASE");
+
+    options.UseNpgsql($@"Server={host}; Port={port}; Database={db}; User Id=postgres; Password={password};",
+        options => options.SetPostgresVersion(17, 2)            
+    );
 });
 
 
@@ -165,11 +167,10 @@ builder.Services.AddScoped<DbToCSV>();
 // Add Token Service
 builder.Services.AddScoped<ITokenService, TokenService>();
 
-#endregion
 
 
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 
 
