@@ -1,16 +1,16 @@
 using API.Data;
 using API.Interfaces;
 using API.Interfaces.Repository;
-using API.Repository;
 using API.Models.User;
+using API.Repository;
 using API.Services;
+using dotenv.net;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text.Json.Serialization;
-using dotenv.net;
 
 
 DotEnv.Load();
@@ -115,7 +115,6 @@ builder.Services.AddCors(options =>
 });
 
 
-
 // Add Authentication
 builder.Services.AddAuthentication(options => {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -138,17 +137,12 @@ builder.Services.AddAuthentication(options => {
     };
 });
 
-
-
 // Add Logging
 builder.Services.AddLogging(loggingBuilder => {
     loggingBuilder.AddConsole()
         .AddFilter(DbLoggerCategory.Database.Command.Name, LogLevel.Information);
     loggingBuilder.AddDebug();
 });
-
-
-
 
 // Add Repositories
 builder.Services.AddScoped<IPokemonRepository, PokemonRepository>();
@@ -173,47 +167,38 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 WebApplication app = builder.Build();
 
 
-
-var scopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
-
-
-if (args.Length > 0 && args[0] == "seed")
+// Migrate and seed database
+using (var serviceScope = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope())
 {
-    // Add Seed Data to DB
-    using (var scope = scopeFactory.CreateScope()) 
-    {
-        var dbInitializer = scope.ServiceProvider.GetService<IDbInitializer>()!;
-        dbInitializer.SeedAll();
-    }
+    var logger = serviceScope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+    var db = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>().Database;
+
+    logger.LogInformation("Migrating database...");
+    serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>().Database.Migrate();
+    logger.LogInformation("Database migrated successfully.");
+
+    logger.LogInformation("Seeding database...");
+    serviceScope.ServiceProvider.GetRequiredService<IDbInitializer>().SeedAll();
+    logger.LogInformation("Database seeded successfully.");
 }
-else if (args.Length == 1 && args[0] == "dbtocsv")
+
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
 {
-    // Write static data to csv
-    using (var scope = scopeFactory.CreateScope()) 
-    {
-        var dbToCSV = scope.ServiceProvider.GetService<DbToCSV>()!;
-        dbToCSV.WriteAllToCSV();
-    }
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
-else
-{
-    // Configure the HTTP request pipeline.
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseSwagger();
-        app.UseSwaggerUI();
-    }
 
-    app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
-    app.UseCors(MyAllowSpecificOrigins);
+app.UseCors(MyAllowSpecificOrigins);
 
-    app.UseAuthentication();
-    app.UseAuthorization();
+app.UseAuthentication();
+app.UseAuthorization();
 
-    app.MapControllers();
+app.MapControllers();
 
-    app.Run();
-}
+app.Run();
 
 public partial class Program { }

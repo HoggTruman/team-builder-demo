@@ -11,14 +11,13 @@ namespace API.Data;
 
 public class DbInitializer : IDbInitializer
 {
-    private const string SeedDir = @"Data\SeedData";
+    private const string SeedDir = "SeedData";
     private readonly ApplicationDbContext _dbContext;
 
     public DbInitializer(ApplicationDbContext dbContext)
     {
         _dbContext = dbContext;
     }   
-
 
 
     /// <summary>
@@ -34,7 +33,7 @@ public class DbInitializer : IDbInitializer
         AddRecords<Ability, AbilityCSVMap>(@"ability.csv", _dbContext.Ability);
         AddRecords<Gender, GenderCSVMap>(@"gender.csv", _dbContext.Gender);
         AddRecords<Move, MoveCSVMap>(@"move.csv", _dbContext.Move);
-        AddRecords<MoveEffect, MoveEffectCSVMap>(@"move_effect.csv", _dbContext.MoveEffect); // MOVE EFFECTS ARE MISSING FOR SOME NEWER MOVES IN SEED DATA
+        AddRecords<MoveEffect, MoveEffectCSVMap>(@"move_effect.csv", _dbContext.MoveEffect);
         AddRecords<DamageClass, DamageClassCSVMap>(@"damage_class.csv", _dbContext.DamageClass);
         AddRecords<Item, ItemCSVMap>(@"item.csv", _dbContext.Item);
         AddRecords<Nature, NatureCSVMap>(@"nature.csv", _dbContext.Nature);
@@ -48,6 +47,9 @@ public class DbInitializer : IDbInitializer
     }
 
 
+    /// <summary>
+    /// Deletes all data from the seed data tables.
+    /// </summary>
     private void ClearTables()
     {
         _dbContext.Pokemon.ExecuteDelete();
@@ -60,7 +62,6 @@ public class DbInitializer : IDbInitializer
         _dbContext.Gender.ExecuteDelete();
         _dbContext.Item.ExecuteDelete();
         _dbContext.Nature.ExecuteDelete();
-
         _dbContext.PokemonPkmnType.ExecuteDelete();
         _dbContext.PokemonMove.ExecuteDelete();
         _dbContext.PokemonAbility.ExecuteDelete();
