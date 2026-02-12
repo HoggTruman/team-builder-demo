@@ -15,18 +15,7 @@ DotEnv.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
-// set environment to Test to seed test db
-if (args.Length == 2 && args[0] == "seed" && args[1] == "test")
-{
-    Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Test");
-}
-
-// var environmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? builder.Environment.EnvironmentName;
-
-builder.Configuration
-       .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-    //    .AddJsonFile($"appsettings.{environmentName}.json", optional: true, reloadOnChange: true);
-
+builder.Configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers()
@@ -62,7 +51,6 @@ builder.Services.AddSwaggerGen(option => {
 });
 
 
-
 // Add DBContext
 builder.Services.AddDbContext<ApplicationDbContext>(options => {
     string? host = Environment.GetEnvironmentVariable("PGHOST");
@@ -74,7 +62,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => {
         options => options.SetPostgresVersion(17, 2)            
     );
 });
-
 
 
 // Add Identity
@@ -98,8 +85,6 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options => {
     options.User.RequireUniqueEmail = false;
 })
 .AddEntityFrameworkStores<ApplicationDbContext>();
-
-
 
 
 // Add CORS

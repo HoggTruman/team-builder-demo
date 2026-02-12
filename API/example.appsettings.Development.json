@@ -1,5 +1,0 @@
-{
-    "ConnectionStrings": {
-        "DB_CONNECTION_STRING": "your development db connection string here"
-    }
-}
