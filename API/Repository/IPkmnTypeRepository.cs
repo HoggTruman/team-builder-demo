@@ -1,6 +1,6 @@
 using API.Models.Static;
 
-namespace API.Interfaces.Repository;
+namespace API.Repository;
 
 public interface IPkmnTypeRepository
 {

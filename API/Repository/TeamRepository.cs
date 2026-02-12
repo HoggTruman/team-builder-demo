@@ -1,6 +1,5 @@
 using API.Data;
 using API.DTOs.Team;
-using API.Interfaces.Repository;
 using API.Mappers;
 using API.Models.User;
 using Microsoft.EntityFrameworkCore;

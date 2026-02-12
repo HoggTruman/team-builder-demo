@@ -1,7 +1,7 @@
 using API.DTOs.Team;
 using API.Models.User;
 
-namespace API.Interfaces.Repository;
+namespace API.Repository;
 
 public interface ITeamRepository
 {

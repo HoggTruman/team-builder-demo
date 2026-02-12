@@ -1,6 +1,5 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using API.Interfaces;
 using API.Models.User;
 using Microsoft.IdentityModel.Tokens;
 

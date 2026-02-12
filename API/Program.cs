@@ -1,6 +1,4 @@
 using API.Data;
-using API.Interfaces;
-using API.Interfaces.Repository;
 using API.Models.User;
 using API.Repository;
 using API.Services;

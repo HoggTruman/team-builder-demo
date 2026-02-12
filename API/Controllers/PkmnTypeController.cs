@@ -1,6 +1,6 @@
 using API.DTOs.PkmnType;
-using API.Interfaces.Repository;
 using API.Mappers;
+using API.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;

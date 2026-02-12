@@ -1,6 +1,6 @@
 using API.DTOs.Nature;
-using API.Interfaces.Repository;
 using API.Mappers;
+using API.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
