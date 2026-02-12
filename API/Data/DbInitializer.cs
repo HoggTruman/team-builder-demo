@@ -5,6 +5,7 @@ using API.Mappers.CSVClassMaps;
 using API.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using CsvHelper.Configuration;
+using EFCore.BulkExtensions;
 
 
 namespace API.Data;
@@ -27,23 +28,24 @@ public class DbInitializer : IDbInitializer
     {
         ClearTables();
 
-        AddRecords<Pokemon, PokemonCSVMap>(@"pokemon.csv", _dbContext.Pokemon);
-        AddRecords<PkmnType, PkmnTypeCSVMap>(@"pkmn_type.csv", _dbContext.PkmnType);
-        AddRecords<BaseStats, BaseStatsCSVMap>(@"base_stats.csv", _dbContext.BaseStats);
-        AddRecords<Ability, AbilityCSVMap>(@"ability.csv", _dbContext.Ability);
+        // Ordered to prevent foreign key constraint violations
         AddRecords<Gender, GenderCSVMap>(@"gender.csv", _dbContext.Gender);
-        AddRecords<Move, MoveCSVMap>(@"move.csv", _dbContext.Move);
-        AddRecords<MoveEffect, MoveEffectCSVMap>(@"move_effect.csv", _dbContext.MoveEffect);
-        AddRecords<DamageClass, DamageClassCSVMap>(@"damage_class.csv", _dbContext.DamageClass);
-        AddRecords<Item, ItemCSVMap>(@"item.csv", _dbContext.Item);
         AddRecords<Nature, NatureCSVMap>(@"nature.csv", _dbContext.Nature);
+        AddRecords<DamageClass, DamageClassCSVMap>(@"damage_class.csv", _dbContext.DamageClass);
+        AddRecords<PkmnType, PkmnTypeCSVMap>(@"pkmn_type.csv", _dbContext.PkmnType);
+        AddRecords<Ability, AbilityCSVMap>(@"ability.csv", _dbContext.Ability);
+        AddRecords<MoveEffect, MoveEffectCSVMap>(@"move_effect.csv", _dbContext.MoveEffect);
+        AddRecords<Item, ItemCSVMap>(@"item.csv", _dbContext.Item);
+        AddRecords<Move, MoveCSVMap>(@"move.csv", _dbContext.Move);
+        AddRecords<Pokemon, PokemonCSVMap>(@"pokemon.csv", _dbContext.Pokemon);
+        AddRecords<BaseStats, BaseStatsCSVMap>(@"base_stats.csv", _dbContext.BaseStats);
 
         AddRecords<PokemonPkmnType, PokemonPkmnTypeCSVMap>(@"pokemon_pkmn_type.csv", _dbContext.PokemonPkmnType);
         AddRecords<PokemonMove, PokemonMoveCSVMap>(@"pokemon_move.csv", _dbContext.PokemonMove);
         AddRecords<PokemonAbility, PokemonAbilityCSVMap>(@"pokemon_ability.csv", _dbContext.PokemonAbility);
         AddRecords<PokemonGender, PokemonGenderCSVMap>(@"pokemon_gender.csv", _dbContext.PokemonGender);
 
-        _dbContext.SaveChanges();
+        _dbContext.BulkSaveChanges();
     }
 
 

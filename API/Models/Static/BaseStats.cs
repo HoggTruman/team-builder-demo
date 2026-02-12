@@ -1,11 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-/*
-COULD THIS JUST BE INCLUDED IN POKEMON?? NOT SURE IT IS NECESSARY TO HAVE SEPARATELY, ADDS CLUTTER
-*/
-
-
 namespace API.Models.Static;
 
 [Table("BaseStats")]
