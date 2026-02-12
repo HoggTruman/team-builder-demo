@@ -1,6 +1,5 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
-using API.DTOS.Misc;
 
 namespace API.DTOs.UserPokemon;
 

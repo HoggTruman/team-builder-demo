@@ -1,6 +1,5 @@
 using API.Data;
 using API.Models.Static;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Repository;

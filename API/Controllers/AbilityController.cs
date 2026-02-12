@@ -2,7 +2,6 @@ using API.DTOs.Ability;
 using API.Mappers;
 using API.Repository;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace API.Controllers

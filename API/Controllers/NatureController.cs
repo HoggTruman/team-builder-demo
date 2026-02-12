@@ -2,7 +2,6 @@ using API.DTOs.Nature;
 using API.Mappers;
 using API.Repository;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace API.Controllers

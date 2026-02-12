@@ -1,5 +1,4 @@
 using System.Text.Json.Serialization;
-using API.DTOs.PokemonAbility;
 using API.DTOs.BaseStats;
 
 namespace API.DTOs.Pokemon

@@ -1,5 +1,4 @@
 using API.DTOs.Team;
-using API.DTOs.UserPokemon;
 using API.Models.User;
 
 namespace API.Mappers;
