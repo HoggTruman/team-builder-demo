@@ -38,4 +38,4 @@ services:
 
 volumes:
   db-data:
-    name: "product-catalog-service-db-data"
+    name: "team-builder-db-data"
