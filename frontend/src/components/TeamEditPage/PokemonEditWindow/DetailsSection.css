@@ -1,0 +1,31 @@
+#detailsSection {
+    display: inline-block;
+    border: 1px solid orange;
+    width: 350px;
+    height: 175px;
+    vertical-align: top;
+}
+
+#detailsSection {
+    div.row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.field {
+        padding: 0.5rem;
+    }
+
+    div.field > label.side {
+        margin-right: 0.5rem;
+    }
+
+    div.field > label.above {
+        display: block;
+    }
+
+    #itemInput, #abilityInput {
+        width: 120px;
+    }
+
+}

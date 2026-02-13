@@ -1,0 +1,19 @@
+#itemOptionsTable {
+    .row.item {    
+        .col.icon {
+            width: 5%;
+
+            .itemIcon {
+                image-rendering: pixelated;
+            }
+        }
+    
+        .col.name {
+            width: 20%;
+        }
+    
+        .col.effect {
+            width: 75%;
+        }
+    }
+}

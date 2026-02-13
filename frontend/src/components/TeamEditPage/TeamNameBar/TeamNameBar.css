@@ -1,0 +1,14 @@
+#teamNameBar {
+    border: 1px solid blue;
+    padding: 10px 10px;
+    font-size: 20px;
+    width: 1102px;
+}
+
+#teamNameBar {
+    #teamNameInput {
+        height: 30px;
+        font-size: 15px;
+        width: 300px;
+    }
+}

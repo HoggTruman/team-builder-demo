@@ -1,0 +1,39 @@
+#statsSection {
+    display: inline-block;
+    vertical-align: top;
+    width: 550px;
+    height: 350px;
+    border: 1px solid indigo;
+}
+
+#statsSection {
+    table {
+        border-spacing: 10px 2px;
+        margin-bottom: 10px;
+    }
+
+    #remainingEVs {
+        display: inline-block;
+        margin-left: 75px;
+        margin-right: 0;
+    }
+
+    #remainingEVs.warning {
+        color: red;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .evSlider {
+        width: 275px;
+    }
+
+    #natureLabel {
+        margin-left: 10px;
+    }
+
+
+
+}

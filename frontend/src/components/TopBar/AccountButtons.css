@@ -1,0 +1,19 @@
+#accountButtons {
+    display: flex;
+    width: 400px;
+    height: 100%;
+    align-items: center;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+#accountButtons {
+    button {
+        height: 80%;
+    }
+
+    #topBarUserName {
+        margin-right: 20px;
+        font-size: 18px;
+    }
+}

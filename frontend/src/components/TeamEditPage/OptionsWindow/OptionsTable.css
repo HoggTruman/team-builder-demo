@@ -1,0 +1,43 @@
+#optionsWindow {
+    width: 1102px;
+    height: 412px;
+    border: 1px solid black;
+}
+
+
+#optionsWindow {
+    div.optionsTable {
+        width: 1100px;
+        height: 412px;
+        display: block;
+    }
+
+    div.optionsTable {
+        .row {
+            /* width: 100%; */
+            height: 50px;
+            text-align: center;
+        }
+
+        .row.header {
+            height: 20px;
+            position: sticky;
+            top: 0;
+            background-color: grey;
+            font-size: 14px;
+            padding-right: 18px;
+        }
+
+        .row .col {
+            display: inline-block;
+            margin: auto 0;
+            vertical-align: middle;
+        }
+
+        .noMatches {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}

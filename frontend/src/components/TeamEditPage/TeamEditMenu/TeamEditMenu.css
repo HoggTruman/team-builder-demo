@@ -1,0 +1,31 @@
+#teamEditMenu {
+    border: 1px solid black;
+    /* display: flex; */
+    width: 1102px;
+}
+
+#teamEditMenu {
+    #selectPokemonButtons {
+        display: inline-block;
+        width: 720px;
+        margin: 0 10px;
+    }
+
+    #addPokemonButton {
+        display: inline-block;
+    }
+
+    .menuButton {
+        display: inline-block;
+        border: 1px solid red;
+        padding: 5px;
+        width: 120px;
+        height: 70px;
+        vertical-align: top;
+    }
+
+    #deletePokemonButton {
+        display: inline-block;
+    }
+
+}

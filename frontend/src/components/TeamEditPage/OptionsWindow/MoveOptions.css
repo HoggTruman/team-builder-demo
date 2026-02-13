@@ -1,0 +1,27 @@
+#moveOptionsTable {
+    .row.move {    
+        .col.name {
+            width: 20%;
+        }
+    
+        .col.type {
+            width: 5%;
+        }
+    
+        .col.category {
+            width: 5%;
+        }
+    
+        .col.stat {
+            width: 5%;
+        }
+    
+        .col.effect {
+            width: 55%;
+        }
+
+        img {
+            image-rendering: pixelated;
+        }
+    }
+}

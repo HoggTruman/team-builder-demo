@@ -1,0 +1,41 @@
+#pokemonOptionsTable {
+    .row.pokemon {    
+        .col.icon {
+            width: 8%;
+
+            .pokemonIcon {
+                image-rendering: pixelated;
+                max-height: 40px;
+            }
+        }
+    
+        .col.name {
+            width: 10%;
+        }
+    
+        .col.types {
+            width: 17%;
+
+            img {
+                image-rendering: pixelated;
+                margin: 0 2px;
+            }
+        }
+    
+        .col.abilities {
+            width: 30%;
+
+            span {
+                margin: 0 5px;
+            }
+        }
+    
+        .col.stat {
+            width: 5%;
+        }
+    
+        .col.bst {
+            width: 5%;
+        }
+    }
+}

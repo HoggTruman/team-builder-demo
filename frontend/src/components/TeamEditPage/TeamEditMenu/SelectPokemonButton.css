@@ -1,0 +1,30 @@
+.menuButton.pokemon.active {
+    background-color: silver;
+}
+
+.menuButton.pokemon {
+    img.icon {
+        image-rendering: pixelated;
+        display: inline-block;
+        max-height: 40px;
+        vertical-align: middle;
+    }
+
+    .iconHelper {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .iconFrame {
+        margin: 0 auto;
+        height: 40px;
+        white-space: nowrap;
+    }
+
+    .pokemonName {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+

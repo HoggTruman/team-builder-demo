@@ -1,0 +1,42 @@
+#pokemonSection {
+    display: inline-block;
+    border: 1px solid darkcyan;
+    width: 200px;
+    height: 350px;
+    vertical-align: top;
+}
+
+#pokemonSection {
+    label {
+        display: block;
+        margin-left: 30px;
+    }
+    input {
+        margin-left: 30px;
+        margin-bottom: 10px;
+        width: 140px;
+    }
+
+    img {
+        image-rendering: pixelated;
+        background-color: white;
+    }
+
+    #pokemonimg {
+        display: block;
+        border: 1px solid black;
+        margin: 50px auto 5px auto;
+    }
+
+    .types {
+        width: 96px;
+        height: 20px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 1px solid black;
+        padding: 2px;
+        margin: 5px auto 20px auto;
+    }
+}

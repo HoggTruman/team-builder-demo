@@ -1,0 +1,52 @@
+.teamInList {
+    display: flex;
+    border: 1px solid black;
+    width: max-content;
+    padding: 0.2rem;
+    background-color: white;
+    margin: 2px 0;
+}
+
+.teamInList {
+    .teamButton {
+        width: 400px;
+        border: 1px solid black;
+        margin: 0.2rem;
+    }
+
+    .teamIcons {
+        height: 50px;
+        margin: 3px;
+    }
+
+    .teamIcons {
+        .icon {
+            display: inline-block;
+            image-rendering: pixelated;
+            max-height: 40px;
+            vertical-align: middle;
+        }
+
+        .iconHelper {
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+    
+        .iconFrame {
+            display: inline-block;
+            white-space: nowrap;
+            width: 50px;
+            height: 40px;
+            margin: 0 auto;
+        }
+    }
+
+    .renameTeamButton, .deleteTeamButton {
+        height: 76px;
+        margin: auto 0;
+        border: 1px solid black;
+        margin: 0.2rem;
+    }
+}
+

@@ -1,0 +1,11 @@
+#abilityOptionsTable {
+    .row.ability {    
+        .col.name {
+            width: 20%;
+        }
+    
+        .col.effect {
+            width: 80%;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+#pokemonEditWindow {
+    border: 1px solid black;
+    width: max-content;
+}
+
+#pokemonEditWindow {
+    #detailsMovesSection {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
