@@ -17,6 +17,11 @@ module.exports = {
     //   favicon: './src/assets/favicon.png'
     })
   ],
+  resolve: {
+    fallback: { 
+      path: require.resolve("path-browserify") 
+    }
+  },
   devServer: {
     port: 4000,
     static: [
