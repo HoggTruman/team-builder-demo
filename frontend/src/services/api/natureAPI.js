@@ -1,6 +1,8 @@
 import axios from "axios";
+import path from "path";
+import { API_BASE } from "./apiInfo";
 
-const API = "http://localhost:5110/api/nature";
+const API = path.join(API_BASE, "nature");
 
 
 export async function getAllNatures() {

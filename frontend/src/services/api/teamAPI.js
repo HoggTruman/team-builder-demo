@@ -1,9 +1,9 @@
 import axios from "axios";
+import path from "path";
+import { API_BASE } from "./apiInfo";
 
-const TEAM_API = "http://localhost:5110/api/team";
-const TEAMS_API = "http://localhost:5110/api/teams";
-
-
+const TEAM_API = path.join(API_BASE, "team");
+const TEAMS_API = path.join(API_BASE, "teams");
 
 
 export async function getAllTeamsAPI(token) {

@@ -1,6 +1,8 @@
 import axios from "axios";
+import path from "path";
+import { API_BASE } from "./apiInfo";
 
-const API = "http://localhost:5110/api/move";
+const API = path.join(API_BASE, "move");
 
 
 export async function getAllMoves() {

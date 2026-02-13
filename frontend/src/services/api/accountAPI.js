@@ -1,6 +1,8 @@
 import axios from "axios";
+import path from "path";
+import { API_BASE } from "./apiInfo";
 
-const API = "http://localhost:5110/api/account"
+const API = path.join(API_BASE, "account");
 
 export async function loginAPI(userName, password) {
     try {
