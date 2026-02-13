@@ -1,9 +1,9 @@
-name: "team-builder-backend"
+name: "team-builder"
 
 services:
   api:
     build:
-      context: .
+      context: ./API
     image: "team-builder-api"
     environment:
       - PGHOST=db
@@ -19,6 +19,16 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    
+  frontend:
+    build:
+      context: ./frontend
+    image: "team-builder-frontend"
+    ports:
+      - 4000:8080
+    depends_on:
+      api:
+        condition: service_started      
 
   db:
     image: postgres:17.2
