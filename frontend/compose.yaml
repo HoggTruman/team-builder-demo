@@ -1,0 +1,9 @@
+name: "team-builder-frontend"
+
+services:
+  frontend:
+    build:
+      context: .
+    image: "team-builder-frontend"
+    ports:
+      - 4000:8080
