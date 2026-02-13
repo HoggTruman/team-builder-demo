@@ -7,16 +7,9 @@ namespace API.Services;
 
 public class TokenService : ITokenService
 {
-    private readonly IConfiguration _configuration;
-    private readonly SymmetricSecurityKey _key;
-
-    public TokenService(IConfiguration configuration)
-    {
-        _configuration = configuration;
-        _key = new SymmetricSecurityKey(
-            System.Text.Encoding.UTF8.GetBytes(configuration["JWT:SigningKey"]!)
-        );
-    }
+    private readonly SymmetricSecurityKey _key = new(
+        System.Text.Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_SIGNING_KEY")!)
+    );
 
     public string CreateToken(AppUser appUser)
     {
@@ -32,8 +25,8 @@ public class TokenService : ITokenService
             Subject = new ClaimsIdentity(claims),
             Expires = DateTime.Now.AddDays(7),
             SigningCredentials = credentials,
-            Issuer = _configuration["JWT:Issuer"],
-            Audience = _configuration["JWT:Audience"]
+            Issuer = Environment.GetEnvironmentVariable("JWT_ISSUER"),
+            Audience = Environment.GetEnvironmentVariable("JWT_AUDIENCE")
         };
 
         var tokenHandler = new JwtSecurityTokenHandler();
