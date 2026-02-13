@@ -1,10 +1,9 @@
 import axios from "axios";
-import path from "path";
-import { API_BASE } from "./apiInfo";
+import { API_BASE } from "./baseAPI";
 
-const TEAM_API = path.join(API_BASE, "team");
-const TEAMS_API = path.join(API_BASE, "teams");
-
+axios.defaults.baseURL = API_BASE;
+const TEAM_API = "/team";
+const TEAMS_API = "/teams";
 
 export async function getAllTeamsAPI(token) {
     try {

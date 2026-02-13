@@ -1,9 +1,8 @@
 import axios from "axios";
-import path from "path";
-import { API_BASE } from "./apiInfo";
+import { API_BASE } from "./baseAPI";
 
-const API = path.join(API_BASE, "ability");
-
+axios.defaults.baseURL = API_BASE;
+const API = "/ability";
 
 export async function getAllAbilities() {
     try {
@@ -18,7 +17,7 @@ export async function getAllAbilities() {
 
 export async function getAbilityById(id) {
     try {
-        const response = await axios.get(API.concat("/", id), {
+        const response = await axios.get(API + "/" + id, {
             validateStatus: status => status === 200,
         });
         return response.data;

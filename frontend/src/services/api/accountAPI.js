@@ -1,13 +1,13 @@
 import axios from "axios";
-import path from "path";
-import { API_BASE } from "./apiInfo";
+import { API_BASE } from "./baseAPI";
 
-const API = path.join(API_BASE, "account");
+axios.defaults.baseURL = API_BASE;
+const API = "/account"
 
 export async function loginAPI(userName, password) {
     try {
         const response = await axios.post(
-            API.concat("/", "login"),
+            API + "/login",
             {
                 userName: userName,
                 password: password
@@ -29,7 +29,7 @@ export async function loginAPI(userName, password) {
 export async function registerAPI(userName, password, confirmPassword) {
     try {
         const response = await axios.post(
-            API.concat("/", "register"),
+            API + "/register",
             {
                 userName: userName,
                 password: password,

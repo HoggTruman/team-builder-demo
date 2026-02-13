@@ -1,9 +1,8 @@
 import axios from "axios";
-import path from "path";
-import { API_BASE } from "./apiInfo";
+import { API_BASE } from "./baseAPI";
 
-const API = path.join(API_BASE, "type");
-
+axios.defaults.baseURL = API_BASE;
+const API = "/type";
 
 export async function getAllTypes() {
     try {

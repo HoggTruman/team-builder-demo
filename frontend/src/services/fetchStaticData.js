@@ -16,9 +16,9 @@ export async function fetchStaticData() {
     const natures = await getAllNatures();
     const pokemon = await getAllPokemon();
     const types = await getAllTypes();
+    
 
-    if (
-        abilities !== undefined &&
+    if (abilities !== undefined &&
         genders !== undefined &&
         items !== undefined &&
         moves !== undefined &&

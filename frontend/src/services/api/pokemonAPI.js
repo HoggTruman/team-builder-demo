@@ -1,8 +1,8 @@
 import axios from "axios";
-import path from "path";
-import { API_BASE } from "./apiInfo";
+import { API_BASE } from "./baseAPI";
 
-const API = path.join(API_BASE, "pokemon");
+axios.defaults.baseURL = API_BASE;
+const API = "/pokemon";
 
 
 export async function getAllPokemon() {
