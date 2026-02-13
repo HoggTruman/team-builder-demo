@@ -5,8 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "test": "jest",
-    "build": "webpack",
-    "server": "node --watch server.js"
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
