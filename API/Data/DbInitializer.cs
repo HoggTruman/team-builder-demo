@@ -25,8 +25,6 @@ public class DbInitializer : IDbInitializer
     /// </summary>
     public void SeedAll()
     {
-        // ClearTables();
-
         // Ordered to prevent foreign key constraint violations
         SeedTable<Gender, GenderCSVMap>(@"gender.csv", _dbContext.Gender);
         SeedTable<Nature, NatureCSVMap>(@"nature.csv", _dbContext.Nature);

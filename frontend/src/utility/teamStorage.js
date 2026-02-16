@@ -1,6 +1,3 @@
-// NOTE: manually editing local storage with bad data will probably break the site
-
-
 const KEY = "teams";
 
 

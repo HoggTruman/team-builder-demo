@@ -68,7 +68,7 @@ function DetailsSection(props) {
 
     // Render
     const activePokemonData = props.data.pokemon.find(
-        x => x.identifier == clean(props.activePokemon.pokemonName)  // breaks for pokemon with form identifier
+        x => x.identifier == clean(props.activePokemon.pokemonName)
     );
     
     let genderOptions = activePokemonData?.genders.map(genderId => {
@@ -111,7 +111,7 @@ function DetailsSection(props) {
 
         handleChangeGender(fakeEvent);
 
-        }, [props.activePokemon.pokemonName])
+    }, [props.activePokemon.pokemonName])
 
 
 
