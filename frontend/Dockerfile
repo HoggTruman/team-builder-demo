@@ -22,6 +22,9 @@ COPY . .
 # Build the React.js application (outputs to /app/dist)
 RUN npm run build
 
+# Copy favicon to build output
+COPY src/assets/favicon.ico dist
+
 # =========================================
 # Stage 2: Prepare Nginx to Serve Static Files
 # =========================================
